@@ -22,7 +22,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ExploreComponent } from './explore/explore.component';
 import { LoginuserService } from './loginuser.service';
-import { AuthInterceptorService } from './auth-interceptor-service';
+import { AuthInterceptorService } from './login/auth-interceptor-service';
 import { AuthGuard } from './auth/auth.guard';
 import { CommonModule } from '@angular/common';
 
