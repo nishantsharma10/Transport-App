@@ -25,6 +25,7 @@ import { LoginuserService } from './loginuser.service';
 import { AuthInterceptorService } from './login/auth-interceptor-service';
 import { AuthGuard } from './auth/auth.guard';
 import { CommonModule } from '@angular/common';
+import { DistanceComponent } from './distance/distance.component';
 
 
 
@@ -47,6 +48,7 @@ import { CommonModule } from '@angular/common';
     RegisterUserComponent,
     UserloginComponent,
     ExploreComponent,
+    DistanceComponent,
     
     
   

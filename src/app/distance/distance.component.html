@@ -1,0 +1,12 @@
+<h1 style="color:blue;">Search Route</h1>
+<form (ngSubmit)="searchroute()">
+<div class="row g-3">
+    <div class="col-sm-5">
+        
+      <input type="text" class="form-control" placeholder="Origin" aria-label="City" id="origin" name="origin"[(ngModel)]="origin.origin">
+    </div>
+    <div class="col-sm-5">
+        
+      <input type="text" class="form-control" placeholder="Destination" aria-label="State" id="destination" name="destination"[(ngModel)]="origin.destination">
+    </div>
+</div>
