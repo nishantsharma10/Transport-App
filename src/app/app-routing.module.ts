@@ -11,10 +11,11 @@ import { RegisterUserComponent } from './register/register.component';
 import { UserloginComponent } from './login/login.component';
 import { ExploreComponent } from './explore/explore.component';
 import { AuthGuard } from './auth/auth.guard';
+import { DistanceComponent } from './distance/distance.component';
 
 const routes: Routes = [
   { path: '', component: LandingpageComponent },
-  {path: 'home',component:HomeComponent,canActivate:[AuthGuard]},
+  {path: 'home',component:HomeComponent},
   { path: 'search/:searchTerm', component: HomeComponent},
   { path: 'tag/:tag', component: HomeComponent },
   {path:'food/:id', component:FoodPageComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'registeruser', component:RegisterUserComponent},
   {path: 'userlogin', component:UserloginComponent},
   {path: 'tables',component:TablesComponent},
-  {path: 'explore',component:ExploreComponent,canActivate:[AuthGuard]}
+  {path: 'explore',component:ExploreComponent},
+  {path: 'distance',component:DistanceComponent}
 ];
 
 @NgModule({

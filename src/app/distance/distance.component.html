@@ -1,4 +1,21 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Travel Yaari</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/about">About</a>
+          <a routerLink="/userlogin">Login</a>       
+          <a routerLink="contactform">Contact Us</a>
+        </li>     
+      </ul>
+    </nav>
+    
+  </div>
+</header>
 <h1 style="color:blue;">Search Route</h1>
+<br>
+<br>
 <form (ngSubmit)="searchroute()">
 <div class="row g-3">
     <div class="col-sm-5">
@@ -8,5 +25,10 @@
     <div class="col-sm-5">
         
       <input type="text" class="form-control" placeholder="Destination" aria-label="State" id="destination" name="destination"[(ngModel)]="origin.destination">
+    </div>
+    <div class="col-sm">
+     
+      <button type="submit" class="btn btn-primary">Search</button>
+
     </div>
 </div>
